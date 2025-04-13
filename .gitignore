@@ -1,0 +1,82 @@
+# ===============================
+# Python 共通の除外設定
+# ===============================
+
+# Python の bytecode やキャッシュ
+__pycache__/
+*.py[cod]
+*$py.class
+
+# setuptools, pip のビルド成果物
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 仮想環境関連（venv, envなど）
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# ログファイル等
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ===============================
+# rye 環境特有の除外設定
+# ===============================
+
+# rye が使用するロックファイルとディレクトリ
+rye.lock
+.rye/
+.rye_cache/  # 生成物のキャッシュがあれば
+
+# ===============================
+# C++ 開発用の除外設定
+# ===============================
+
+# オブジェクトファイル・コンパイル成果物類
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+*.exe
+*.out
+*.gch
+*.pch
+
+# ビルドディレクトリ（Makefile, CMake 生成物等）
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# IDE/エディタ固有の除外設定
+# Visual Studio 関連
+.vs/
+
+# Xcode 関連
+DerivedData/
+build/
+
+# Qt Creator 関連
+*.pro.user*
